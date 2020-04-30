@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Quem sou eu</title>
+
+    <meta name="viewport" content="width=devide-width initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    
+    <link rel="icon" href="./img/icon.png">
+</head>
+
+<body>
+    <header class="bg-primary mb-5">
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-primary">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Mostrar links de navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar-links">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Início</a>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="link-projects" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projetos</a>
+                        <div class="dropdown-menu-wrap" aria-labelledby="link-projects">
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Sistemas</a>
+                                <a href="#" class="dropdown-item">Línguas</a>
+                                <a href="#" class="dropdown-item">Jogos</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <h1 class="title">Quem Sou Eu</h1>
+        
+        <div class="wave"></div>
+    </header>
+
+
+
+    <main class="my-n2">
+        <section class="container-fluid">
+            <div class="row mx-auto block-max-sm flex-center">
+                <h2 class="col block-md my-2">Desevolvedor em tempo integral</h2>
+                <div class="col-img-md"></div>
+            </div>
+
+            <div class="row mx-auto block-max-sm flex-center">
+                <img src="./img/dev.png" class="col-img-md my-2" />
+
+                <div class="col block-md m-0 my-2">
+                    <p class="text-justify">Sou Felipe Nasimento, 18 anos, curso Ciências da Computação e tenho curso em Técnico de Informática focado em desenvolvimento. Programo a mais de 5 anos, mas comecei a me profissionalizar só recentemente. Faço sites, sistemas desktops, jogos, e tudo mais que eu conseguir pesquisar.</p>
+                    <p class="text-justify">Embora tenho feito curso, aprendi quase tudo que sei sozinho. Comecei a programar seguindo todo material que eu podia achar na internet sobre desenvolvimento de jogos. Sou versátil, me adapto rápido e sou ótimo pra perceber o que funciona e o que não.</p>
+                </div>
+            </div>
+
+            <div class="row mx-auto flex-md-row-reverse block-max-sm flex-center">
+                <img src="./img/draw.png" class="col-img-md my-2" />
+
+                <div class="col block-md m-0 my-2">
+                    <h4>Um pouco de tudo</h4>
+                    <p class="text-justify">Há mutias coisas que sou. Sou desenvolvedor web, mobile, desktop e de jogos. Há mais coisas ainda que quero ser. Escritor, desenhista, músico, conlanger e worldbuilder.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid ">
+            <div class="row mx-auto block-max-sm flex-center">
+                <h2 class="col block-md my-2">Geek de meio periodo</h2>
+                <div class="col-img-md"></div>
+            </div>
+
+            <div class="row mx-auto flex-md-row-reverse block-max-sm flex-center">
+                <p class="text-justify my-2">Gosto de tudo que você espararia de um geek: animes, jogos, HQs, RPG, livros, matemática, lógica, hobbies estranhos...</p>
+            </div>
+
+            <div class="row mx-auto block-max-sm flex-center">
+                <img src="./img/game.png" class="col-img-md my-2" />
+
+                <div class="col block-md m-0 my-2">
+                    <h4>Jogos são minha vida</h4>
+                    <p class="text-justify">Tenho contato com video-games desde muito pequeno, acho que não lembro de alguma fase da minha vida que eu não jogava. Adoro jogá-los, mas o que amo mesmo é fazê-los. Não vejo minha vida sem isso, e com certeza é o que me impulsina para seguir em frente.</p>
+                    
+                    <h4>Criar é minha paixão</h4>
+                    <p class="text-justify">Acho que criar coisas é o que me guia. Histórias, mundos, pinturas, línguas, comidas, tudo me encanta, me toma e me move. É isso que me leva aos jogos e livros, e é isso que me leva a querer fazê-los.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        
+        <ul class="media-link">
+            <li><a class="twitter" href="https://twitter.com/pipowss">Twitter</a></li>
+            <li><a class="itch" href="https://pipows.itch.io">Itch.io</a></li>
+        </ul>
+        <span><strong>Felipe Nascimento, 2020</strong></span>
+    </footer>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./bootstrap/bootstrap.min.js"></script>
+
+    <script>
+        $('.dropdown').on('show.bs.dropdown', _ => {
+            var menu = this.$('.dropdown-menu-wrap')
+
+            menu.animate({
+                height: 'toggle'
+            }, $(window).width() < 768 ? 350 : 1)
+        })
+        $('.dropdown').on('hide.bs.dropdown', _ => {
+            var menu = this.$('.dropdown-menu-wrap')
+
+            menu.animate({
+                height: 'toggle'
+            }, $(window).width() < 768 ? 350 : 1)
+        })
+
+    </script>
+</body>

@@ -1,0 +1,155 @@
+img {
+	border-radius: 0.3em;
+}
+
+footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+	width: calc(100% - 60px);
+	padding: 15px;
+	margin: 0 30px;
+
+	border-top: solid 1px rgba(0, 0, 0, 0.125);
+}
+
+.wave {
+	margin-top: -80px;
+    margin-bottom: -50px;
+    width: 100%;
+    height: 192px;
+	background: url(../img/wave.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
+
+.bg-primary,
+.btn-primary,
+.dropdown-item:active {
+	background-color: none !important;
+	background-image: -webkit-gradient(linear, left top, right top, from(#ec134d), to(#d6106b));
+	background-image: linear-gradient(90deg, #ec134d, #d6106b);
+}
+
+.btn-primary {
+	background-color: #f7083c;
+}
+
+.block-md {
+	width: 100%;
+}
+
+.block-max-sm {
+	width: 100%;
+	max-width: 540px;
+}
+
+.flex-center {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center
+}
+
+.col-img-md {
+	margin-left: 15px;
+	margin-right: 15px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	max-width: 540px;
+	width: 100%;
+	height: auto;
+}
+
+.dropdown-menu-wrap {
+	display: none;
+}
+
+.dropdown-menu {
+	display: block;
+}
+
+.title {
+	display: block;
+	width: 100%;
+	font-size: 3rem;
+	text-align: center;
+	margin: 0;
+	padding: 6.5rem 0;
+	color: white;
+
+	position: relative;
+	z-index: 1040;
+}
+
+.separator {
+	margin: 15px 50px;
+	width: calc(100% - 100px);
+	height: 0;
+	border: solid 2px rgba(0, 0, 0, 0.125);
+}
+
+.media-link {
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.media-link li {
+	display: inline-block;
+	margin-right: 15px;
+	line-height: 1.8rem;
+}
+
+.media-link a {
+	display: block;
+	height: 1.8rem;
+	width: 1.8rem;
+	font-size: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.media-link .twitter {
+	background-image: url(../img/twitter.svg);
+}
+
+.media-link .itch {
+	background-image: url(../img/itch.svg);
+}
+
+@media (min-width: 576px) {
+	.title {
+		font-size: 4rem;
+		padding: 6rem 0;
+	}
+}
+
+@media (min-width: 768px) {
+	.col-img-md {
+		-webkit-box-sizing: content-box;
+		box-sizing: content-box;
+		max-width: 100%;
+		width: 300px;
+	}
+
+	.block-md {
+		max-width: 540px;
+	}
+
+	.block-max-sm {
+		max-width: none;
+	}
+}
